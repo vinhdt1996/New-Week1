@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Thumbnail Image-->
+    <ImageView
+        android:id="@+id/poster"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="150dp"
+        android:layout_height="250dp" />
+
+    <!-- Movie Title -->
+    <TextView
+        android:layout_toRightOf="@+id/poster"
+        android:id="@+id/movie_title_details"
+        android:textStyle="bold"
+        android:textColor="@color/colorYellow"
+        android:textSize="22sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <!-- Movie OverView -->
+    <TextView
+        android:id="@+id/movie_overview"
+        android:layout_below="@+id/movie_title_details"
+        android:layout_toRightOf="@+id/poster"
+        android:textColor="@color/colorGray"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Overview"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/backdrop_fullLayout"
+        tools:src="@drawable/ic_launcher_background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <!--<com.google.android.youtube.player.YouTubePlayerView-->
+        <!--android:id="@+id/playerYoutube"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+
+
+</RelativeLayout>
